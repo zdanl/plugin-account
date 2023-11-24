@@ -1,16 +1,16 @@
-# plugin-{your-plugin-name}
+# plugin-account
 
 [![NPM Downloads](https://img.shields.io/npm/dt/plugin-{your-plugin-name})](https://www.npmjs.com/package/plugin-{your-plugin-name})
 
-A short description of the plugin and its actions.
+The Account Plugin includes a Signup endpoint + Password-Forget & Logout with CSRF protection
 
 ## Purpose
 
-What is the purpose of this plugin and what exactly does it do.
+The purpose of a signup flow and features such as password forget is the ease of building multi-tenant web applications with interactive features. This shall be just the start.
 
 ## Configuration
 
-If a configuration is required, add it here.
+Noone required 
 
 ## Scripts
 
@@ -24,5 +24,8 @@ Running `npm run dev` will watch your plugin's source code and automatically bun
 
 ## Usage
 
-Explain the usage of this plugin and its effect on the final build.
+POST /signup {firstName: string, lastName: string, username: string, password: string}
+GET /password-forget {username: string}
+GET /logout {...header: token: token / _csrf_token=... }
+
 
