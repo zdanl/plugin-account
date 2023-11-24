@@ -24,8 +24,8 @@ Running `npm run dev` will watch your plugin's source code and automatically bun
 
 ## Usage
 
-POST /signup {firstName: string, lastName: string, username: string, password: string}
-GET /password-forget {username: string}
-GET /logout {...header: token: token / _csrf_token=... }
+`POST /signup {firstName: string, lastName: string, username: string, password: string}`
+`GET /password-forget {username: string}`
+`GET /logout {...header: token: token / _csrf_token=... }`
 
 
